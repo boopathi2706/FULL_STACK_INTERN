@@ -1,0 +1,48 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nrmf{
+    box-shadow: 1px 1px 16px #33333357;
+    width: 400px;
+    margin-top: 10%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 10px;
+}
+.inp{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    font-size:0.9rem;
+    /* border: none; */
+}
+.btn{
+    width: 40%;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    /* transition: background-color 0.2s ease-in; */
+}
+.btn:hover{
+    background-color: rgb(21, 234, 21);
+    box-shadow: none;
+    
+}
+/* adding content in html p tag inside */
+.pw::after{
+    content: "hello";
+}
