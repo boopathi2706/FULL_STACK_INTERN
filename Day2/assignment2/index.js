@@ -171,13 +171,29 @@ const newgame=()=>{
 const hold=()=>{
     if(count%2==1){
         real_1.textContent=parseInt(real_1.textContent)+parseInt(curr_1.textContent);
+        if(parseInt(real_1.textContent)>=100){
+         alert("PLAYER-1 WIN");
+         newgame();
+         count=1;
+          play2.style.border = 'none';
+         play1.style.border = '4px solid  rgba(39, 245, 12, 0.985)';
+         return ;
+        }
         curr_1.textContent='0';
         count++;
          play1.style.border = 'none';
-            play2.style.border = '4px solid  rgba(39, 245, 12, 0.985)';
+         play2.style.border = '4px solid  rgba(39, 245, 12, 0.985)';
     }
     else{
          real_2.textContent=parseInt(real_2.textContent)+parseInt(curr_2.textContent);
+          if(parseInt(real_2.textContent)>=100){
+         alert("PLAYER-1 WIN");
+         newgame();
+         count=1;
+          play2.style.border = 'none';
+         play1.style.border = '4px solid  rgba(39, 245, 12, 0.985)';
+         return ;
+        }
         curr_2.textContent='0';
         count++;
          play2.style.border = 'none';
