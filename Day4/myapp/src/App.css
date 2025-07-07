@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 97vh;
+}
+.counter_box{
+    width: 500px;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px #333;
+}
+.count_value{
+    font-size: 4rem;
+    color: rgb(75, 25, 212);
+
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    gap: 10px;
+}
+h3{
+    font-size: 2rem;
+    color:rgb(238, 21, 231);
+    text-shadow: 1px 1px 2px rgb(62, 56, 56);
+}
+.count_btn{
+    width: 150px;
+    height: 40px;
+    border:none ;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #333;
+    font-size: 1.2rem;
+    color: white;
+}
+.inc{
+    background-color: rgb(13, 219, 13);
+}
+.inc:hover{
+    box-shadow: none;
+}
+.dec{
+    background-color: rgb(235, 36, 36);
+
+}
+.dec:hover{
+    box-shadow: none;
+}
+.res{
+    background-color: rgb(23, 177, 249);
+}
+.res:hover{
+    box-shadow: none;
+}
