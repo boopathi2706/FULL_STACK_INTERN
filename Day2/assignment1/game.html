@@ -8,25 +8,25 @@
 </head>
 <body>
     <header>
-        <button class="ag-btn" onclick=refer() >🔁 Again</button>
+        <button className="ag-btn" onClick=refer() >🔁 Again</button>
         <h1>🎯 Guess My Number 🎯</h1>
-        <p class="rag">(Between 1 and 20)</p>
+        <p className="rag">(Between 1 and 20)</p>
         
     </header>
     <hr>
-    <div class="game_area">
-        <div class="number_area">
+    <div className="game_area">
+        <div className="number_area">
             <input type="number" id="value"  min="1" max="20">
-            <button  id="check" onclick=check()>🔍 Check</button>
+            <button  id="check" onClick=check()>🔍 Check</button>
         </div>
-        <div class="inst">
+        <div className="inst">
             <p id="result">▶️ Start Gaming....... </p>
             <p>🎮 Score : <span id="score" >20</span></p>
             <p>🏆 HighScore: <span id="high">0</span></p>
         </div>
     </div>
-    <div class="show_number">
-        <p class="numbers" id="numbers">?</p>
+    <div className="show_number">
+        <p className="numbers" id="numbers">?</p>
     </div>
     <script src="index.js"></script>
     <!-- <script async="" defer="" src="https://buttons.github.io/buttons.js"></script> -->

@@ -74,7 +74,7 @@
 //         console.log("error from async : ",error);
 //     }
 //     finally{
-//         console.log("the class run both correct and incorrect")
+//         console.log("the className run both correct and incorrect")
 //     }
 // }
 // handlePromise();

@@ -9,40 +9,40 @@ const fetchdata=async()=>{
          var i=0;
          while(len--){
             var card=document.createElement('div');
-            card.classList.add("card");
+            card.classNameList.add("card");
            
                 var ide=document.createElement('div');
                 ide.textContent=data[i].id;
                 card.appendChild(ide);
-                ide.classList.add("id_");
+                ide.classNameList.add("id_");
                 
                 var user=document.createElement('div');
                 user.textContent=data[i].username;
                 card.appendChild(user);
-                user.classList.add("user_")
+                user.classNameList.add("user_")
                 
                 // var demo =document.createElement("div");
-                // var div_class1=document.createElement("div");
-                // var div_class2=document.createElement("div");
+                // var div_className1=document.createElement("div");
+                // var div_className2=document.createElement("div");
                 // var sy1=document.createElement("div");
                 // sy1.textContent="📱"
                 // var sy2=document.createElement("div");
                 // sy2.textContent="📱"
                 var div1=document.createElement("div");
-                div1.classList.add("div1");
+                div1.classNameList.add("div1");
                 var pho=document.createElement('h2');
                 pho.textContent=data[i].phone;
                  div1.appendChild(pho);
 
                 // card.appendChild(pho);
-                // pho.classList.add("phone_")
+                // pho.classNameList.add("phone_")
                 
                 var em=document.createElement('h2');
                 em.textContent=data[i].email;
                 div1.appendChild(em);
                 card.appendChild(div1);
                 // card.appendChild(em);
-                // em.classList.add("email_")
+                // em.classNameList.add("email_")
              i++;
             cards.appendChild(card);
             

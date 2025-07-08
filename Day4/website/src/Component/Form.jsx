@@ -24,22 +24,22 @@ const Form = () => {
       // alert("something is wrong check it");
     }
     var popup=document.getElementById("pop_up");
-    popup.classList.add("down");
-    popup.classList.remove("up");
+    popup.classNameList.add("down");
+    popup.classNameList.remove("up");
   };
   const done=()=>{
     var popup=document.getElementById("pop_up");
-    popup.classList.remove("down");
-    popup.classList.add("up");
+    popup.classNameList.remove("down");
+    popup.classNameList.add("up");
   }
   return (
-    <div className="form_area">
+    <div classNameName="form_area">
       <h1>Sign Up</h1>
       <h5>Please fill out this form to register</h5>
       <form action="" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="inputs"
+          classNameName="inputs"
           onChange={(e) => {
             setName(e.target.value);
           }}
@@ -48,7 +48,7 @@ const Form = () => {
         />
         <input
           type="email"
-          className="inputs"
+          classNameName="inputs"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
@@ -57,14 +57,14 @@ const Form = () => {
         />
         <input
           type="password"
-          className="inputs"
+          classNameName="inputs"
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
           required
                   />
         <input
           type="password"
-          className="inputs"
+          classNameName="inputs"
           onChange={(e) => {
             setConfirmPassword(e.target.value);
           }}
@@ -73,21 +73,21 @@ const Form = () => {
         />
         <button type="submit">Sign Up</button>
       </form>
-      <div className="pop_up" id="pop_up">
+      <div classNameName="pop_up" id="pop_up">
         {success === true ? (
           <>
             <h2>🎉 Successfully Sign-Up 🎉</h2>
-            <img className="pop_img" src={user} alt="" />
-            <div className="user_details">
-              <h3 className="detail detail_name">{name}</h3>
-              <h3 className="detail">📧 {email}</h3>
-              <button className="pop_btn" onClick={done} >Done</button>
+            <img classNameName="pop_img" src={user} alt="" />
+            <div classNameName="user_details">
+              <h3 classNameName="detail detail_name">{name}</h3>
+              <h3 classNameName="detail">📧 {email}</h3>
+              <button classNameName="pop_btn" onClick={done} >Done</button>
             </div>
           </>
         ) : (
           <>
           <h1>❌ Sign-up Failed ❌</h1>
-          <button className="pop_btn" onClick={done} >Done</button>
+          <button classNameName="pop_btn" onClick={done} >Done</button>
           </>
           
         )}

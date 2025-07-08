@@ -4,19 +4,19 @@ import Form from './Form'
 
 const FirstPage = () => {
   return (
-    <div className='firstname'>
+    <div classNameName='firstname'>
         <Navbar />
-        <div className="content_firstpage">
-              <div className='content_left'>
+        <div classNameName="content_firstpage">
+              <div classNameName='content_left'>
                    <h1>Build social profiles and gain revenue profits</h1>
-                    <div className='lorem'>
+                    <div classNameName='lorem'>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita fugiat possimus?</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita fugiat possimus?</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita fugiat possimus?</p>
                         
                     </div>
               </div>
-              <div className="form">
+              <div classNameName="form">
                   <Form />
               </div>
         </div>

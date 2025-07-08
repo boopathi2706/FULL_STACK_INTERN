@@ -9,9 +9,9 @@ console.log(h1[0]);
 const id=document.getElementById('a');
 console.log(id);
 
-//class selector
+//className selector
 
-const clas=document.getElementsByClassName('b');
+const clas=document.getElementsByclassNameName('b');
 console.log(clas)
 
 //query Selector
@@ -35,8 +35,8 @@ id.textContent="dom value change using id";
 //styling
 id.style.color='red';
 
-id.classList.add("hello");
-id.classList.remove("hello");
+id.classNameList.add("hello");
+id.classNameList.remove("hello");
 
 
 // add element
