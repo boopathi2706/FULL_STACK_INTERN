@@ -1,0 +1,191 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  width: 99vw;
+  height: 99vh;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.firstPage{
+  width: 99vw;
+  height: 99vh;
+  background-color: #0a0a0a;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: url("../Component/luffy-art-chromebook-wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.lines{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  gap: 30px;
+  /* background-color: aqua; */
+}
+.line_subtopic{
+  font-size: 1.2rem;
+  width: 40vw;
+}
+.line_topic{
+  width: 50vw;
+  color:aqua;
+  text-shadow: 1px 1px 2px #333;
+}
+.form{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+.form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 60%;
+  background-color:white;
+  border-radius: 10px;
+}
+.form form h3{
+  color:purple;
+}
+.form form input{
+  width: 84%;
+  height: 10%;
+  border-radius:5px;
+  outline: none;
+  font-size: 1rem;
+  padding-left: 6%;
+  background-color: white;
+}
+.form form button{
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: aqua;
+  color: white;
+  cursor: pointer;
+}
+.form form button:hover{
+  background-color: white;
+  border: 2px solid aqua;
+  color: black;
+}
+
+
+
+
+
+.youtube_area{
+   width: 99vw;
+   height: 99vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  background-color: aqua;
+}
+.channel_area{
+  width: 30%;
+  height: 70%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.channel_i{
+  width: 100%;
+  height: 40%;
+  background-color: antiquewhite;
+  background: url("./[channel]/images.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 10px 0 0px;
+
+}
+.channel_n{
+  width: 100%;
+  height: 40%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 0 0 10px 10px;
+}
+.channel_n button{
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.logo{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: aquamarine;
+  top: 33%;
+  background: url("./[channel]/images2.jpeg");
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgb(42, 231, 13);
+}
