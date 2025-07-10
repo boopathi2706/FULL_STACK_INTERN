@@ -165,6 +165,7 @@ a {
   justify-content: center;
   gap: 10px;
   border-radius: 0 0 10px 10px;
+  color: #0a0a0a;
 }
 .channel_n button{
   width: 150px;
