@@ -12,7 +12,7 @@ const UserNavbar = () => {
         <div className='links'>
             <h3 onClick={()=>{router.push("/home")}}>Home</h3>
             <h3 onClick={()=>{router.push("/about")}}>About</h3>
-            <h3 onClick={()=>{router.push("/setting")}}>Setting</h3>
+            <h3 onClick={()=>{router.push("/")}}>AdminLogin</h3>
         </div>
     </div>
   )

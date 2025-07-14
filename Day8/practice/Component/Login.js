@@ -6,7 +6,7 @@ const Login = () => {
   const router = useRouter();
   const redirect = (e) => {
     e.preventDefault();
-    router.push("/home");
+    router.push("/adminhome");
   };
   return (
     <div className="login_area">

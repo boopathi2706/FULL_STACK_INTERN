@@ -29,7 +29,7 @@ const BlogBox = ({
       </div>
       <div className="btn_ani">
         <div>4.3 rating</div>
-        <button>Watch</button>
+        <button><a target="block" href="https://www.youtube.com/@PokemonAsiaHindiOfficial">Watch</a></button>
       </div>
     </div>
   );

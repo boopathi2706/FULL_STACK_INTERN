@@ -230,6 +230,7 @@ span{
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 .btn_ani div{
   color: #FF2E63;
@@ -238,6 +239,7 @@ span{
   width: 150px;
   height: 35px;
   background-color:#08D9D6;
+  cursor: pointer;
   outline: none;
   border: none;
   border-radius: 5px;
