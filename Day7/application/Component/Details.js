@@ -27,7 +27,7 @@ const Details = () => {
   const data = [
     {
       name: "VIJAY",
-      age: 43,
+      age: 50,
       img: vijayImg,
     },
     {
@@ -37,27 +37,27 @@ const Details = () => {
     },
     {
       name: "SK",
-      age: 43,
+      age: 33,
       img:sk,
     },
     {
       name: "DHANUSH",
-      age: 43,
+      age: 41,
       img: dhanu,
     },
     {
       name: "NAYANTHARA",
-      age: 43,
+      age: 48,
       img: naya,
     },
     {
       name: "TRISHA",
-      age: 43,
+      age: 45,
       img: thiru,
     },
     {
-      name: "SAI PALLAVI",
-      age: 43,
+      name: "SAI_PALLAVI",
+      age: 30,
       img: sai,
     },
      {
@@ -67,37 +67,37 @@ const Details = () => {
     },
     {
       name: "RAJINI",
-      age: 43,
+      age: 73,
       img: rajini,
     },
     {
       name: "KAMAL",
-      age: 43,
+      age: 71,
       img: kamal,
     },
     {
-      name: "SETHUPATHI",
-      age: 43,
+      name: "SEDHUPATHI",
+      age: 51,
       img: sethu,
     },
     {
       name: "THAMANA",
-      age: 43,
+      age: 42,
       img: thamana,
     },
     {
       name: "KARTHI",
-      age: 43,
+      age: 37,
       img: karthi,
     },
     {
       name: "AJITH",
-      age: 43,
+      age:53,
       img: ajith,
     },
     {
       name: "KEERTHI",
-      age: 43,
+      age: 33,
       img: keerthi,
     },
   ];

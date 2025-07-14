@@ -37,11 +37,11 @@ const MyBlog = () => {
                   <Card actor_name="NAYANTHARA" actor_img={naya} actor_age='52' router={router}/>
                    <Card actor_name="TRISHA" actor_img={thiru} actor_age='40' router={router}/>
 
-                   <Card actor_name="AK" actor_img={ajith} actor_age='52' router={router}/>
+                   <Card actor_name="AJITH" actor_img={ajith} actor_age='52' router={router}/>
                <Card actor_name="RAJINI" actor_img={rajini} actor_age='70' router={router}/>
                 <Card actor_name="KARTHI" actor_img={karthi} actor_age='40' router={router}/>
                  <Card actor_name="SAMANTHA" actor_img={sam} actor_age='35' router={router}/>
-                  <Card actor_name="SAI PALLAVI" actor_img={sai} actor_age='30' router={router}/>
+                  <Card actor_name="SAI_PALLAVI" actor_img={sai} actor_age='30' router={router}/>
 
                    <Card actor_name="SEDHUPATHI" actor_img={sethu} actor_age='50' router={router}/>
                    <Card actor_name="KAMAL" actor_img={kamal} actor_age='68' router={router}/>
