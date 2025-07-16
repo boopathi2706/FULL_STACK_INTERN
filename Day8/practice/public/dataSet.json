@@ -118,5 +118,13 @@
     "description": "Ash and friends board the luxury cruise St. Anne, but Team Rocket has plans.",
     "duration": "22 minutes",
     "release_date": "1997-07-08"
+  },
+  {
+    "episode_id": "16",
+    "episode_name": "hi",
+    "episode_image": "https://cdn.mos.cms.futurecdn.net/kLrVvdXcJtrADurP9abxRZ-1200-80.jpg",
+    "description": "hello this is pokemon",
+    "duration": "32min",
+    "release_date": "1982-22-2"
   }
 ]

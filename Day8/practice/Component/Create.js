@@ -1,8 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 const Create = () => {
-  const [dataset, setDataset] = useState([]);
   const [formData, setFormData] = useState({
     episode_id: "",
     episode_name: "",
@@ -12,11 +11,7 @@ const Create = () => {
     release_date: "",
   });
 
-  useEffect(() => {
-    fetch("/dataSet.json")
-      .then((res) => res.json())
-      .then((data) => setDataset(data));
-  }, []);
+
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
