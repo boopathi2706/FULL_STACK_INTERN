@@ -29,18 +29,12 @@ export const GET = async (_,{params}) => {
 };
 
 
-export const DELETE = async(req,context)=>{
+export const DELETE = async(_,{params})=>{
    try {
-    const id =Number(context.params.id);
+
+    const id =Number(params.id);
      await connectDB();
-     const data = await ProductModel.findOne({id});
-    if(!data){
-        return Response.json({
-            status:"wrong",
-            message:"data not found"
-        },{status:401})
-    }
-    ProductModel.deleteOne({id});
+    await ProductModel.findByIdDelete({id});
     return Response.json({
         status:"success",
         data:{
@@ -57,10 +51,14 @@ export const DELETE = async(req,context)=>{
 }
 
 
-export const PATCH = async (req, { params }) => {
+export const PATCH = async (_,{params}) => {
     try {
-        const data = await req.json();
+        
+        
         const id = Number(params.id);
+        
+        const data = await req.json();
+        await connectDB();
 
         if (!data.name && !data.age) {
             return Response.json({
@@ -69,22 +67,14 @@ export const PATCH = async (req, { params }) => {
             }, { status: 401 });
         }
 
-        const index = products.findIndex(item => item.id === id);
-        if (index === -1) {
-            return Response.json({
-                status: "wrong",
-                message: "Data not found"
-            }, { status: 404 });
-        }
-
-        const existing = products[index];
+        const existing = await ProductModel.find(item=>item.id===id);
 
         const updatedItem = {
             id,
             name: data.name || existing.name,
             age: data.age || existing.age
         };
-        products.splice(index, 1, updatedItem);
+        await ProductModel.findByIdAndUpdate({id,updatedItem});
 
         return Response.json({
             status: "success",
